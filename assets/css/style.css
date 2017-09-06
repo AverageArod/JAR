@@ -1,0 +1,322 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+* {
+    box-sizing: border-box;
+}
+button {
+    outline: none;
+    border: 0;
+    background: none;
+    padding: 0;
+}
+hr {
+    border: none;
+}
+body {
+    text-rendering: optimizeLegibility;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: default;
+}
+html {
+    font-size: 10px;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Oswald','Times',serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 12rem;
+    line-height: 1;
+}
+h2 {
+    font-size: 32px;
+    line-height: 1;
+}
+h3 {
+    font-size: 2.0rem;
+    line-height: 1;
+    display: block;
+    position: relative;
+    margin: auto!important;
+}
+h4 {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+p {
+    font-family: 'slabo 27px',serif;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 3rem;
+    margin-bottom: 40px;
+}
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+}
+.asap-wrap {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.asap-container {
+    display: block;
+    position: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+}
+ol, ul {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+    color: #000;
+    list-style: disc;
+    width: 80%;
+    margin: 5rem auto;
+}
+@media all and (max-width:670px) {
+    ol, ul {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        margin: 2.5rem auto;
+    }
+}
+figure {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+figure img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+figure img.desktop {
+    display: inline;
+}
+figure img.mobile {
+    display: none;
+}
+@media all and (max-width:670px) {
+    figure img.desktop {
+        display: none;
+    }
+    figure img.mobile {
+        display: inline;
+    }
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    -webkit-text-fill-color: #434343 !important;
+}
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+#asap-hero {
+    min-height: 100vh;
+    background: url("/assets/images/LandingPageHero.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#asap-hero h1 {
+    width: 100%;
+    font-size: 12rem;
+    text-align: center;
+    color: #434343;
+    position: relative;s
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width:1200px) {
+    #asap-hero h1 {
+        font-size: 15rem;
+    }
+}
+@media (max-width:750px) {
+    #asap-hero h1 {
+        font-size: 9rem;
+        bottom: auto;
+        top: 40px;
+    }
+}
+#asap-hero h3 {
+    width: 100%;
+    font-size: 3rem;
+    color: #434343;
+    position: relative;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.asap-hero .asap-container .hero-nav {
+    display: inline-flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
+    align-self: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+}
+.asap-hero .asap-container {
+    order: 1;
+}
+@media (max-width:750px) {
+    #asap-hero h3 {
+        top: 150px;
+        left: auto;
+        transform: none;
+        right: 20px;
+        text-align: right;
+    }
+}
+#album-cta {
+    background: #fff;
+    color: #353535;
+    padding: 160px 0;
+}
+@media all and (max-width:1024px) {
+    #album-cta {
+        padding: 60px 0;
+    }
+}
+#album-cta .album-grid {
+    display: table;
+    width: 75%;
+    height: auto;
+}
+@media all and (max-width:1024px) {
+    #album-cta .album-grid {
+        display: block;
+    }
+}
+#album-cta .album-grid__image, #album-cta .album-grid__copy {
+    display: table-cell;
+    width: 50%;
+}
+@media all and (max-width:1024px) {
+    #album-cta .album-grid__image, #album-cta .album-grid__copy {
+        display: block;
+        width: 100%;
+    }
+}
+@media all and (max-width:1024px) {
+    #album-cta .album-grid__image {
+        text-align: center;
+    }
+}
+#album-cta .album-grid__image img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+#album-cta .album-grid__copy {
+    padding-left: 10%;
+    vertical-align: middle;
+}
+@media all and (max-width:1024px) {
+    #album-cta .album-grid__copy {
+        padding-left: 0;
+        padding-top: 40px;
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+#album-cta .album-grid__copy h4 {
+    margin-bottom: 5px;
+}
+#album-cta .album-grid__copy h2 {
+    margin-bottom: 30px;
+}
+#album-cta .album-grid__link {
+    font-family: 'Oswald','Times',serif;
+    font-weight: 900;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: #FFF;
+    text-transform: uppercase;
+}
+#album-cta .album-grid__link:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+.main-nav {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    align-content: center;
+}
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none!important;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.main-nav a {
+    margin: 10px;
+    padding: 10px;
+    display: block;
+}
+.logo {
+    max-width: 130px;
+    margin-right: auto;
+    size: 35px;
+}
+.logo img {
+    max-width: 100%;
+}
+header {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.footer {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    display: block;
+}

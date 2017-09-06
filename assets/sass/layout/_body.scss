@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+# Body
+--------------------------------------------------------------*/
+
+body,
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/*--------------------------------------------------------------
+# Body - Content Wrap
+--------------------------------------------------------------*/
+.asap-wrap { 
+  display: block; 
+  width: 100%; 
+  height: auto; 
+}
+
+.asap-container { 
+  display: block; 
+  width: 90%; 
+  max-width: 1200px; 
+  // makes element 90% of parent element up util 1200px
+  margin: 0 auto 0 auto; 
+}
