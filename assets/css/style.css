@@ -54,7 +54,7 @@ html {
     font-size: 10px;
 }
 h1, h2, h3, h4, h5 {
-    font-family: 'Oswald','Times',serif;
+    font-family: 'Amatica SC', cursive;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -158,14 +158,26 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     align-items: center;
     justify-content: center;
 }
+#navigation {
+    font-family: 'Amatica SC', cursive;
+    font-size: 3rem;
+    color: #434343;
+    outline-style: solid;
+    outline-color: #d6d9a6;
+}
 #asap-hero h1 {
     width: 100%;
-    font-size: 12rem;
+    font-family: 'Amatica SC', cursive;
+    font-size: 18rem;
     text-align: center;
+    letter-spacing: 30px;
     color: #434343;
     position: relative;s
     left: 50%;
     transform: translateX(-50%);
+}
+#asap-hero h2 {
+    font-family: 'Josefin Slab', serif;
 }
 @media (max-width:1200px) {
     #asap-hero h1 {
@@ -197,6 +209,12 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     align-content: flex-end;
     align-items: flex-end;
     position: relative;
+}
+.btn {
+    font-family: 'Amatica SC', cursive;
+}
+#bt {
+    background-color: #FF878D;
 }
 .asap-hero .asap-container {
     order: 1;
@@ -265,8 +283,18 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
         margin-right: auto;
     }
 }
+<<<<<<< HEAD
 
 /* Text styling for body content */
+=======
+.album-grid__copy h3 {
+    font-family: 'Amatica SC', cursive;
+    font-size: 35px;
+}
+.album-grid__copy p {
+    font-family: 'Josefin Slab', serif;
+}
+>>>>>>> 7fed4a059189a29f70295e184401e78a5a16c466
 #album-cta .album-grid__copy h4 {
     margin-bottom: 5px;
 }
@@ -288,11 +316,23 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 /*---------- Header Navigation Styling------ */
 .main-nav {
+    background-color: #fff;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff; 
+    border-style: solid;
+    border-width: 2px;
+    border-color: #d6d9a6; 
     margin: 0 auto;
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 100%;
     align-content: center;
+}
+#learn{
+    font-family: 'Josefin Slab', serif;
 }
 .main-nav ul {
     margin: 0;
@@ -325,6 +365,7 @@ header {
 .footer {
     max-width: 100%;
     height: auto;
+<<<<<<< HEAD
     display: inline-block;
     position: absolute; 
     display: flex; 
@@ -372,3 +413,20 @@ header {
     z-index: 2; 
     display: inline-block; 
 } */
+=======
+    width: 100%;
+    display: block;
+}
+
+
+/****************Button****************/
+
+#learn {
+    background-color: #FF878D;
+    border-color: #FFB6C1;
+    }
+
+#learn a {
+    color: #fff;
+}
+>>>>>>> 7fed4a059189a29f70295e184401e78a5a16c466
