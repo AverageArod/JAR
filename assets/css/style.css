@@ -272,6 +272,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     padding-left: 10%;
     vertical-align: middle;
 }
+
+/* conditional styling for mobile/ smaller scrreen responsive */
 @media all and (max-width:1024px) {
     #album-cta .album-grid__copy {
         padding-left: 0;
@@ -281,6 +283,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
         margin-right: auto;
     }
 }
+<<<<<<< HEAD
+
+/* Text styling for body content */
+=======
 .album-grid__copy h3 {
     font-family: 'Amatica SC', cursive;
     font-size: 35px;
@@ -288,6 +294,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .album-grid__copy p {
     font-family: 'Josefin Slab', serif;
 }
+>>>>>>> 7fed4a059189a29f70295e184401e78a5a16c466
 #album-cta .album-grid__copy h4 {
     margin-bottom: 5px;
 }
@@ -306,6 +313,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     text-decoration: none;
     color: #FFF;
 }
+
+/*---------- Header Navigation Styling------ */
 .main-nav {
     background-color: #fff;
     text-shadow:
@@ -351,9 +360,60 @@ header {
     padding: 0;
     margin: 0;
 }
+
+/* fixed div named 'Footer' Styling */
 .footer {
     max-width: 100%;
     height: auto;
+<<<<<<< HEAD
+    display: inline-block;
+    position: absolute; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: flex-end; 
+    max-width: 100%; 
+}
+#foot-form{ 
+    display: flex; 
+    position: relative; 
+    z-index: 2; 
+    max-width: 100%;
+    width: 60%; 
+    justify-content: flex-end!important; 
+    align-content: flex-end!important; 
+    align-items: flex-end; 
+
+}
+#foot-form form { 
+    display: flex;
+    position: absolute; 
+    flex-direction: column; 
+    align-content: flex-end; 
+    max-width: 100%;  
+    max-height: 100px; 
+    height: 50%; 
+    width: 50%; 
+    z-index: 2; 
+}
+
+/* Styling for image and description text in form */
+#foot-form .form-content{ 
+    display: flex; 
+    align-items: center; 
+}
+
+#foot-form .form-content #form-img img {
+    max-width: 80%;
+    size: 70%; 
+    margin: 10px; 
+}
+
+/* #foot-form form{ 
+    position: absolute; 
+    z-index: 2; 
+    display: inline-block; 
+} */
+=======
     width: 100%;
     display: block;
 }
@@ -369,3 +429,4 @@ header {
 #learn a {
     color: #fff;
 }
+>>>>>>> 7fed4a059189a29f70295e184401e78a5a16c466
