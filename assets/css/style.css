@@ -53,6 +53,15 @@ body {
 html {
     font-size: 10px;
 }
+
+/****** HEADER ******/
+
+.jar h1 {
+    margin-left: 50%;
+    text-align: center;
+}
+
+/***** FONTS *****/
 h1, h2, h3, h4, h5 {
     font-family: 'Amatica SC', cursive;
     font-weight: 700;
@@ -200,6 +209,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     left: 50%;
     transform: translateX(-50%);
 }
+
+/***** nav *****/
+
 .asap-hero .asap-container .hero-nav {
     display: inline-flex;
     justify-content: space-between;
@@ -215,6 +227,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 #bt {
     background-color: #FF878D;
+    margin: 0px 100px;
+    font-size: 30px;
+    margin-bottom: -250px;
 }
 .asap-hero .asap-container {
     order: 1;
@@ -283,10 +298,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
         margin-right: auto;
     }
 }
-<<<<<<< HEAD
 
 /* Text styling for body content */
-=======
 .album-grid__copy h3 {
     font-family: 'Amatica SC', cursive;
     font-size: 35px;
@@ -294,21 +307,14 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .album-grid__copy p {
     font-family: 'Josefin Slab', serif;
 }
->>>>>>> 7fed4a059189a29f70295e184401e78a5a16c466
 #album-cta .album-grid__copy h4 {
     margin-bottom: 5px;
 }
 #album-cta .album-grid__copy h2 {
     margin-bottom: 30px;
 }
-#album-cta .album-grid__link {
-    font-family: 'Oswald','Times',serif;
-    font-weight: 900;
-    font-size: 2.2rem;
-    line-height: 1;
-    color: #FFF;
-    text-transform: uppercase;
-}
+
+
 #album-cta .album-grid__link:hover {
     text-decoration: none;
     color: #FFF;
@@ -333,6 +339,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 #learn{
     font-family: 'Josefin Slab', serif;
+    color: #FF878D;
 }
 .main-nav ul {
     margin: 0;
@@ -365,7 +372,6 @@ header {
 .footer {
     max-width: 100%;
     height: auto;
-<<<<<<< HEAD
     display: inline-block;
     position: absolute; 
     display: flex; 
@@ -413,10 +419,9 @@ header {
     z-index: 2; 
     display: inline-block; 
 } */
-=======
-    width: 100%;
+    /*width: 100%;
     display: block;
-}
+}*/
 
 
 /****************Button****************/
@@ -429,4 +434,18 @@ header {
 #learn a {
     color: #fff;
 }
->>>>>>> 7fed4a059189a29f70295e184401e78a5a16c466
+
+.form-content .form-group .form-group mx-sm-3 {
+float: right;
+}
+
+
+/*#album-cta .album-grid__link {
+    font-family: 'Oswald','Times',serif;
+    font-weight: 900;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: #FFF;
+    text-transform: uppercase;
+}*/
+
