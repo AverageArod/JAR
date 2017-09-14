@@ -373,31 +373,18 @@ header {
 
 /* fixed div named 'Footer' Styling */
 .footer {
-    /*max-width: 100%;*/
     height: auto;
     display: inline-block;
     position: absolute; 
     display: flex; 
     justify-content: flex-end; 
     align-items: flex-end; 
-    /*max-width: 100%; */
 }
 #foot-form{ 
     display: flex; 
-    /*position: absolute; 
-    z-index: 2; */
-    /*background: yellow;*/
-    /*max-width: 100%;*/
-    /*width: 60%; */
     justify-content: space-between;  
     align-items: center; 
     flex-flow: row nowrap;
-
-    /*flex-direction: row;
-    flex-wrap: wrap;
-    text-align: right;
-    margin-left: 30%;
-    top: 100%;*/
 }
 
 
@@ -459,8 +446,6 @@ float: right;
 
 .all {
     z-index: 3;
-    /*position: absolute;*/
-    /*margin-top: 30%;*/
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -471,9 +456,6 @@ float: right;
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
-    /*background-image: url("/assets/images/TreeOflifeHero.jpg");
-    background-size: 100% 100%;*/
-    /*background: red;*/
 }
 
 #form-img {
@@ -499,27 +481,21 @@ float: right;
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 #footer {
     position: absolute;
     z-index: -2;
-    /*margin-top: -400px;*/
 }
 
 footer {
-    /*overflow: visible;*/
-    margin-top: 450px;
-    display: flex;
+    margin-top: 160px;
+    display: flex !important;
     flex-direction: row;
-    /*background: red;*/
 }
 
-.realparent {
-    /*background: yellow;*/
+.nothing, .form-content {
+    flex: 1;
 }
-
-.real {
-    width: 100%;
-}
+ 
