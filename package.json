@@ -1,12 +1,12 @@
 {
-  "name": "asapferg",
+  "name": "",
   "version": "1.0.0",
-  "description": "a splash page",
+  "description": "",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Anthony Rodriguez",
+  "author": "Dylan Gluck",
   "devDependencies": {
     "connect": "^3.6.2",
     "grunt": "^0.4.5",
