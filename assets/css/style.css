@@ -43,6 +43,7 @@ button {
 hr {
     border: none;
 }
+
 body {
     text-rendering: optimizeLegibility;
     font-smoothing: antialiased;
@@ -50,9 +51,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
     cursor: default;
 }
+
 html {
     font-size: 10px;
 }
+
 
 /****** HEADER ******/
 
@@ -186,7 +189,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     transform: translateX(-50%);
 }
 #asap-hero h2 {
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Slab', sans-serif;
 }
 @media (max-width:1200px) {
     #asap-hero h1 {
@@ -370,58 +373,32 @@ header {
 
 /* fixed div named 'Footer' Styling */
 .footer {
-    max-width: 100%;
+    /*max-width: 100%;*/
     height: auto;
     display: inline-block;
     position: absolute; 
     display: flex; 
     justify-content: flex-end; 
     align-items: flex-end; 
-    max-width: 100%; 
+    /*max-width: 100%; */
 }
 #foot-form{ 
     display: flex; 
-    position: relative; 
-    z-index: 2; 
-    max-width: 100%;
-    width: 60%; 
-    justify-content: flex-end!important; 
-    align-content: flex-end!important; 
-    align-items: flex-end; 
-
-}
-#foot-form form { 
-    display: flex;
-    position: absolute; 
-    flex-direction: column; 
-    align-content: flex-end; 
-    max-width: 100%;  
-    max-height: 100px; 
-    height: 50%; 
-    width: 50%; 
-    z-index: 2; 
-}
-
-/* Styling for image and description text in form */
-#foot-form .form-content{ 
-    display: flex; 
+    /*position: absolute; 
+    z-index: 2; */
+    /*background: yellow;*/
+    /*max-width: 100%;*/
+    /*width: 60%; */
+    justify-content: space-between;  
     align-items: center; 
-}
+    flex-flow: row nowrap;
 
-#foot-form .form-content #form-img img {
-    max-width: 80%;
-    size: 70%; 
-    margin: 10px; 
+    /*flex-direction: row;
+    flex-wrap: wrap;
+    text-align: right;
+    margin-left: 30%;
+    top: 100%;*/
 }
-
-/* #foot-form form{ 
-    position: absolute; 
-    z-index: 2; 
-    display: inline-block; 
-} */
-    /*width: 100%;
-    display: block;
-}*/
 
 
 /****************Button****************/
@@ -435,17 +412,114 @@ header {
     color: #fff;
 }
 
+/**************** FORM ****************/
+/*
 .form-content .form-group .form-group mx-sm-3 {
 float: right;
+}*/
+
+
+
+.form-content h2 {
+    font-family: 'Amatica SC', cursive;
+    font-size: 40px;
+}
+
+.form-content h5 {
+    font-family: 'Josefin Slab', serif;
+    font-size: 15px;
+}
+
+.form-content p {
+    font-family: 'Josefin Slab', serif;
+}
+
+.form-group {
+    font-family: 'Amatica SC', cursive;
+    display: block;
+}
+
+.form-control-static {
+    font-family: 'Josefin Slab', serif;
+}
+
+#confirm {
+    font-family: 'Amatica SC', cursive;
+}
+
+#type {
+    font-size: 25px;
+}
+
+.form-group, #confirm {
+    display: flex;
+    justify-content: flex-start;
+    width: 450px;
+}
+
+.all {
+    z-index: 3;
+    /*position: absolute;*/
+    /*margin-top: 30%;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.form-content {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    /*background-image: url("/assets/images/TreeOflifeHero.jpg");
+    background-size: 100% 100%;*/
+    /*background: red;*/
+}
+
+#form-img {
+    text-align: left;
 }
 
 
-/*#album-cta .album-grid__link {
-    font-family: 'Oswald','Times',serif;
-    font-weight: 900;
-    font-size: 2.2rem;
-    line-height: 1;
-    color: #FFF;
-    text-transform: uppercase;
-}*/
 
+
+/****** form text ******/
+.join {
+    max-width: 400px;
+    text-align: left;
+    font-size: 30px;
+}
+
+#form-desc, h5, h2 {
+    text-align: left;
+}
+
+
+.realparent, #foot-form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    position: absolute;
+    z-index: -2;
+    /*margin-top: -400px;*/
+}
+
+footer {
+    /*overflow: visible;*/
+    margin-top: 450px;
+    display: flex;
+    flex-direction: row;
+    /*background: red;*/
+}
+
+.realparent {
+    /*background: yellow;*/
+}
+
+.real {
+    width: 100%;
+}
