@@ -201,13 +201,13 @@ html {
 /*--------------------------------------------------------------
 # Body - Content Wrap
 --------------------------------------------------------------*/
-.asap-wrap {
+.how-it-works {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.asap-container {
+.how-it-works-container {
   display: block;
   width: 90%;
   max-width: 1200px;
@@ -289,16 +289,16 @@ input:-webkit-autofill:active {
 # Modules
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# Pages
+# Hero Styling
 --------------------------------------------------------------*/
-#asap-hero {
+#jar-hero {
   min-height: 100vh;
-  background: url("/assets/images/hero_bg.jpg");
   background-position: center center;
   background-size: cover;
   position: relative;
 }
-#asap-hero h1 {
+
+#jar-hero h1 {
   width: 100%;
   font-size: 28rem;
   text-align: center;
@@ -309,25 +309,25 @@ input:-webkit-autofill:active {
   transform: translateX(-50%);
 }
 @media (max-width: 1200px) {
-  #asap-hero h1 {
+  #jar-hero h1 {
     font-size: 20rem;
   }
 }
 @media (max-width: 750px) {
-  #asap-hero h1 {
+  #jar-hero h1 {
     font-size: 9rem;
     bottom: auto;
     top: 40px;
   }
 }
-#asap-hero h3 {
+#jar-hero h3 {
   font-size: 2.8rem;
   line-height: 1;
   text-align: center;
   color: #FFF;
 }
 @media (max-width: 750px) {
-  #asap-hero h3 {
+  #jar-hero h3 {
     top: 150px;
     left: auto;
     transform: none;
@@ -337,54 +337,60 @@ input:-webkit-autofill:active {
 }
 
 /*--------------------------------------------------------------
-# Album CTA
+# How it works content styling
 --------------------------------------------------------------*/
-#album-cta {
+#step1 + #step2 + #step3 {
   background: #000;
   color: #FFF;
   padding: 160px 0;
 }
 @media all and (max-width: 1024px) {
-  #album-cta {
+  #step1 + #step2 + #step3 {
     padding: 60px 0;
   }
 }
-#album-cta .album-grid {
-  display: table;
+#step1 + #step2 + #step3 .flex-contain {
+  display: flex;
   width: 100%;
   height: auto;
 }
+
+.how-it-works-container .flex-contain { 
+  display: flex; 
+}
+
 @media all and (max-width: 1024px) {
-  #album-cta .album-grid {
+  #step1 + #step2 + #step3 .flex-contain {
     display: block;
   }
 }
-#album-cta .album-grid__image, #album-cta .album-grid__copy {
-  display: table-cell;
+#step1 + #step2 + #step3 .img-content and #step1 + #step2 + #step3 .txt-content {
+  display: flex;
   width: 50%;
 }
+
 @media all and (max-width: 1024px) {
-  #album-cta .album-grid__image, #album-cta .album-grid__copy {
+  #step1 + #step2 + #step3 .img-content and #step1 + #step2 + #step3 .txt-content {
     display: block;
     width: 100%;
   }
 }
 @media all and (max-width: 1024px) {
-  #album-cta .album-grid__image {
+  #step1 + #step2 + #step3 .img-content {
     text-align: center;
   }
 }
-#album-cta .album-grid__image img {
-  width: auto;
+#step1 + #step2 + #step3 .img-content img {
   max-width: 100%;
   height: auto;
 }
-#album-cta .album-grid__copy {
-  padding-left: 10%;
+
+#step1 + #step2 + #step3 .txt-content {
   vertical-align: middle;
 }
+
 @media all and (max-width: 1024px) {
-  #album-cta .album-grid__copy {
+  #step1 + #step2 + #step3 .txt-content {
     padding-left: 0;
     padding-top: 40px;
     max-width: 540px;
@@ -392,13 +398,13 @@ input:-webkit-autofill:active {
     margin-right: auto;
   }
 }
-#album-cta .album-grid__copy h4 {
+#step1 + #step2 + #step3 .txt-content h4 {
   margin-bottom: 5px;
 }
-#album-cta .album-grid__copy h2 {
+#step1 + #step2 + #step3 .txt-content h2 {
   margin-bottom: 30px;
 }
-#album-cta .album-grid__link {
+#step1 + #step2 + #step3 .flex-contain__link {
   font-family: 'Oswald', 'Times', serif;
   font-weight: 900;
   font-size: 2.2rem;
@@ -406,7 +412,7 @@ input:-webkit-autofill:active {
   color: #FFF;
   text-transform: uppercase;
 }
-#album-cta .album-grid__link:hover {
+#step1 + #step2 + #step3 .flex-contain__link:hover {
   text-decoration: none;
   color: #FFF;
 }
