@@ -43,6 +43,7 @@ button {
 hr {
     border: none;
 }
+
 body {
     text-rendering: optimizeLegibility;
     font-smoothing: antialiased;
@@ -50,9 +51,20 @@ body {
     -moz-osx-font-smoothing: grayscale;
     cursor: default;
 }
+
 html {
     font-size: 10px;
 }
+
+
+/****** HEADER ******/
+
+.jar h1 {
+    margin-left: 50%;
+    text-align: center;
+}
+
+/***** FONTS *****/
 h1, h2, h3, h4, h5 {
     font-family: 'Amatica SC', cursive;
     font-weight: 700;
@@ -177,7 +189,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     transform: translateX(-50%);
 }
 #asap-hero h2 {
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Slab', sans-serif;
 }
 @media (max-width:1200px) {
     #asap-hero h1 {
@@ -200,6 +212,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     left: 50%;
     transform: translateX(-50%);
 }
+
+/***** nav *****/
+
 .asap-hero .asap-container .hero-nav {
     display: inline-flex;
     justify-content: space-between;
@@ -215,6 +230,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 #bt {
     background-color: #FF878D;
+    margin: 0px 100px;
+    font-size: 30px;
+    margin-bottom: -250px;
 }
 .asap-hero .asap-container {
     order: 1;
@@ -283,10 +301,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
         margin-right: auto;
     }
 }
-<<<<<<< HEAD
 
 /* Text styling for body content */
-=======
 .album-grid__copy h3 {
     font-family: 'Amatica SC', cursive;
     font-size: 35px;
@@ -294,21 +310,14 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .album-grid__copy p {
     font-family: 'Josefin Slab', serif;
 }
->>>>>>> 7fed4a059189a29f70295e184401e78a5a16c466
 #album-cta .album-grid__copy h4 {
     margin-bottom: 5px;
 }
 #album-cta .album-grid__copy h2 {
     margin-bottom: 30px;
 }
-#album-cta .album-grid__link {
-    font-family: 'Oswald','Times',serif;
-    font-weight: 900;
-    font-size: 2.2rem;
-    line-height: 1;
-    color: #FFF;
-    text-transform: uppercase;
-}
+
+
 #album-cta .album-grid__link:hover {
     text-decoration: none;
     color: #FFF;
@@ -333,6 +342,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 #learn{
     font-family: 'Josefin Slab', serif;
+    color: #FF878D;
 }
 .main-nav ul {
     margin: 0;
@@ -363,59 +373,18 @@ header {
 
 /* fixed div named 'Footer' Styling */
 .footer {
-    max-width: 100%;
     height: auto;
-<<<<<<< HEAD
     display: inline-block;
     position: absolute; 
     display: flex; 
     justify-content: flex-end; 
     align-items: flex-end; 
-    max-width: 100%; 
 }
 #foot-form{ 
     display: flex; 
-    position: relative; 
-    z-index: 2; 
-    max-width: 100%;
-    width: 60%; 
-    justify-content: flex-end!important; 
-    align-content: flex-end!important; 
-    align-items: flex-end; 
-
-}
-#foot-form form { 
-    display: flex;
-    position: absolute; 
-    flex-direction: column; 
-    align-content: flex-end; 
-    max-width: 100%;  
-    max-height: 100px; 
-    height: 50%; 
-    width: 50%; 
-    z-index: 2; 
-}
-
-/* Styling for image and description text in form */
-#foot-form .form-content{ 
-    display: flex; 
+    justify-content: space-between;  
     align-items: center; 
-}
-
-#foot-form .form-content #form-img img {
-    max-width: 80%;
-    size: 70%; 
-    margin: 10px; 
-}
-
-/* #foot-form form{ 
-    position: absolute; 
-    z-index: 2; 
-    display: inline-block; 
-} */
-=======
-    width: 100%;
-    display: block;
+    flex-flow: row nowrap;
 }
 
 
@@ -429,4 +398,104 @@ header {
 #learn a {
     color: #fff;
 }
->>>>>>> 7fed4a059189a29f70295e184401e78a5a16c466
+
+/**************** FORM ****************/
+/*
+.form-content .form-group .form-group mx-sm-3 {
+float: right;
+}*/
+
+
+
+.form-content h2 {
+    font-family: 'Amatica SC', cursive;
+    font-size: 40px;
+}
+
+.form-content h5 {
+    font-family: 'Josefin Slab', serif;
+    font-size: 15px;
+}
+
+.form-content p {
+    font-family: 'Josefin Slab', serif;
+}
+
+.form-group {
+    font-family: 'Amatica SC', cursive;
+    display: block;
+}
+
+.form-control-static {
+    font-family: 'Josefin Slab', serif;
+}
+
+#confirm {
+    font-family: 'Amatica SC', cursive;
+}
+
+#type {
+    font-size: 25px;
+}
+
+.form-group, #confirm {
+    display: flex;
+    justify-content: flex-start;
+    width: 450px;
+}
+
+.all {
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.form-content {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+#form-img {
+    text-align: left;
+}
+
+
+
+
+/****** form text ******/
+.join {
+    max-width: 400px;
+    text-align: left;
+    font-size: 30px;
+}
+
+#form-desc, h5, h2 {
+    text-align: left;
+}
+
+
+.realparent, #foot-form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#footer {
+    position: absolute;
+    z-index: -2;
+}
+
+footer {
+    margin-top: 160px;
+    display: flex !important;
+    flex-direction: row;
+}
+
+.nothing, .form-content {
+    flex: 1;
+}
+ 

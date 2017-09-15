@@ -410,3 +410,9 @@ input:-webkit-autofill:active {
   text-decoration: none;
   color: #FFF;
 }
+/*
+@media (max-width: 750px) {
+  .all {
+    margin-left: 60%;
+  }
+}*/
