@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- test -->
 <!--[if lt IE 9]>
 <html lang="en" class="ie8">
 <![endif]-->
@@ -19,6 +20,7 @@
 		<!-- Custom Styles -->
 	  <link href="css/bootstrap.min.css" rel="stylesheet">
 	  <link href="/assets/css/style.css" rel="stylesheet">
+	  
 	  
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -61,32 +63,35 @@
 	</head>
 	<body>
 
-	<!-- Content -->
-<div id="asap-hero" class="asap-wrap"> 
-	<div id ="asap-container" class="asap-container">
+	<!-- Hero image Content -->
+<div id="jar-hero" class="jar-hero"> 
+			<video poster="" id="bgvid" playsinline autoplay muted loop>
+					<source src= "/assets/videos/FarmVideoUnedited.mp4" type="video/mp4">
+			</video>
+		<div id="hero-text" class="hero-text"> 
 
-		<div class="jar">
-		<h1>The Jar</h1>
-		<h2> Community-supported agriculture for those that need it most</h2>
-		</div>
+			<h1>The Jar</h1>
+			<h2> Community-supported agriculture for those that need it most</h2>
+		</div> 
 
 		<div id="hero-nav" class="hero-nav">
 			<button class="btn btn-warning" id="bt"> How it works </button> 
 			<button class="btn btn-warning" id="bt"> Locations</button> 
 			<button class="btn btn-warning" id="bt"> Subscribe </button> 
 		</div>
-	</div> 
-
 </div> 
 
-<div id="album-cta" class="asap-wrap"> 
-		<div class="asap-container">
-			<div class="album-grid">
-				<div class="album-grid__image">
+ <!--How it works content  -->
+<div id ="hiw"> 		
+	<div id="step1" class="how-it-works-container"> 
+			<h2>How it works:</h2>
+		<div class="how-it-works">
+			<div class="flex-contain">
+				<div class="img-content">
 					<img src="/assets/images/RegisterVector.png" />
 				</div> 
 				
-				<div class="album-grid__copy">
+				<div class="txt-content">
 	
 					<h3>Step 1: Register</h3>
 					<p>Register your information & your location
@@ -100,14 +105,15 @@
 		</div>
 	</div> 
 
-	<div id="album-cta" class="asap-wrap"> 
-			<div class="asap-container">
-				<div class="album-grid">
-					<div class="album-grid__image">
+	<div id="step2" class="how-it-works-container"> 
+			<div class="how-it-works">
+				<div class="flex-contain">
+					
+					<div class="img-content">
 						<img src="/assets/images/WhitecanvasBag.jpg" />
 					</div> 
 					
-					<div class="album-grid__copy">
+					<div class="txt-content">
 				
 						<h3>Step 2: Pick up your order</h3>
 						<p>The Jar offers all kinds of veggies that harvested from 
@@ -115,21 +121,20 @@
 								of harsh chemicals, pesticides or GMO’s.
 						An eco-friendly bag will be provided to you during your pick up, 
 								so that you can use it overtime!
-</p>
-						
+						</p>	
 					</div> 
 				</div>
 			</div>
 		</div> 
 
-		<div id="album-cta" class="asap-wrap"> 
-				<div class="asap-container">
-					<div class="album-grid">
-						<div class="album-grid__image">
+		<div id="step3" class="how-it-works-container"> 
+				<div class="how-it-works">
+					<div class="flex-contain">
+						<div class="img-content">
 							<img src="/assets/images/veggie-heart.jpg" />
 						</div> 
 						
-						<div class="album-grid__copy">
+						<div class="txt-content">
 						
 							<h3>Step 3: Live Healthy!</h3>
 							<p>Cut them up, cook the veggies and enjoy a healthy life.</p>
@@ -138,37 +143,38 @@
 					</div>
 				</div>
 			</div> 
-	<!-- End Content -->
+<!-- Google Map Floating panel div with submission requests -->
+	<div id="google-maps-container" class="how-it-works-container"> 
+		
+				<div class="flex-contain"> 
+					<div id="floating-panel"> 
+						<input id="address" type="textbox" value="Your zip Code"> 
+						<input id="submit" type="button" value="Submit"> 
+					</div> 
+			
+					<div id="map">
+						<script type="text/javascript">
+							function initMap() { var map = new google.maps.Map(document.getElementById('map'), { zoom:3, center: {lat: 37.0902, lng: -95.7129} }); var geocoder = new google.maps.Geocoder(); document.getElementById('submit').addEventListener('click', function() { geocodeAddress(geocoder, map); }); } function geocodeAddress(geocoder, resultsMap) { var address = document.getElementById('address').value; geocoder.geocode({'address': address}, function(results, status) { if (status === 'OK') { resultsMap.setCenter(results[0].geometry.location); var marker = new google.maps.Marker({ map: resultsMap, position: results[0].geometry.location }); } else { alert('Geocode was not successful for the following reason: ' + status); } }); }	
+						</script>
+					</div>
+				</div>	
+	
+	</div>
+
+</div> 
 
 
-    <!-- Library Scripts -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <!-- Disabled Scripts -
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TimelineLite.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-    - Uncomment to activate -->
-
-    <!-- Custom Scripts -->
-    <script type="text/javascript" src="/assets/js/custom.min.js"></script>
-	<!-- footer form -->
-				<div id="footer"> 
-				<img src="/assets/images/TreeOflifeHero.jpg" class="img-responsive" width="100%" alt="Footer Image" />
-				</div> 
-	<footer>
-			<!--<div id="footer"> 
+			<div id="footer"> 
 					<img src="/assets/images/TreeOflifeHero.jpg" class="img-responsive" width="100%" alt="Footer Image" />
 		
 				<div id = "foot-form" style="position: relative; z-index: 1;"> 
 					<form style="position: absolute; z-index: 2;" >
 						-->
-				<div class="nothing"></div>
-					<div class="form-content"> 
+					<div class="nothing">
+					</div>
 
-					<div id="foot-form">
-					
-						
+					<div class="form-content"> 
+						<div id="foot-form">
 							<div id="form-img">
 								<img src="/assets/images/THEJARvector.PNG" width="90" height="90">
 							</div> 
@@ -179,29 +185,50 @@
 								<p class="join"> Join our growing community and request a pick-up location in your neighborhood.</p>
 							</div> 
 
+						</div> 
+					
+						<div class="realparent">
+							<form class="real" >	
+								<div class="all">
+									<div class="form-group" id="form-group">
+		<!--<label class="type">Email</label>-->
+					  					<input type="email" class="form-control" id="type" placeholder="email@example.com">
+									</div>
+
+									<div class="form-group">
+		<!--<label for="inputPassword2" class="type">Password</label>-->
+					  					<input type="password" class="form-control" id="type" placeholder="Password">
+									</div>
+
+						<button type="submit" class="btn btn-primary" id="confirm">Confirm identity</button>
+					
+								</div>
+							</form>
+						</div>
 					</div> 
-					
-					<div class="realparent">
-					<form class="real" >	
-					<div class="all">
-						<div class="form-group" id="form-group">
-					  		<!--<label class="type">Email</label>-->
-					  		<input type="email" class="form-control" id="type" placeholder="email@example.com">
-						</div>
-
-						<div class="form-group">
-					  		<!--<label for="inputPassword2" class="type">Password</label>-->
-					  		<input type="password" class="form-control" id="type" placeholder="Password">
-						</div>
-
-							<button type="submit" class="btn btn-primary" id="confirm">Confirm identity</button>
-					
-					</div>
-					</form>
-					</div>
+				</div> 
 			</div> 
 
-		</footer> 
+		<!-- End Content -->
+	    <!-- Library Scripts -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		<!-- Disabled Scripts -
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TimelineLite.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+		- Uncomment to activate -->
+	
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="/assets/js/custom.min.js"></script>
+		<script type="text/javascript" src="/assets/js/main.js"></script>
+		<script type="text/javascript" src="/assets/js/apps.js"></script>
+		
+		<!-- Google Maps API -->
+		  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQopdGFJo-erdGajW_4J4OOQqSYS5K2bI&callback=initMap">
+    </script>
+		<!-- footer form -->
   </body>
  	 
 </html>
