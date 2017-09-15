@@ -100,15 +100,16 @@ body, html {
     width: 100%;
     overflow-x: hidden;
 }
-.asap-wrap {
-    display: block;
+.how-it-works {
+    display: flex;
+    justify-content: space-between; 
     width: 100%;
     height: auto;
 }
-.asap-container {
+#hiw .how-it-works-container {
     display: block;
     position: center;
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto 0 auto;
 }
@@ -159,9 +160,8 @@ input:-webkit-autofill {
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
 }
-#asap-hero {
+#jar-hero {
     min-height: 100vh;
-    background: url("/assets/images/LandingPageHero.jpg");
     background-position: center center;
     background-size: cover;
     position: relative;
@@ -169,7 +169,25 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column; 
 }
+
+#jar-hero video { 
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translateX(-50%) translateY(-50%);
+     background: url("/assets/images/LandingPageHero.jpg")
+     no-repeat;
+     background-size: cover;
+      opacity: .5;
+   }
+   
 #navigation {
     font-family: 'Amatica SC', cursive;
     font-size: 3rem;
@@ -177,33 +195,34 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     outline-style: solid;
     outline-color: #d6d9a6;
 }
-#asap-hero h1 {
+#hero-text h1 {
     width: 100%;
     font-family: 'Amatica SC', cursive;
     font-size: 18rem;
     text-align: center;
     letter-spacing: 30px;
     color: #434343;
-    position: relative;s
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
-#asap-hero h2 {
-    font-family: 'Josefin Slab', sans-serif;
+
+#hero-text h2 {
+    font-family: 'Josefin Slab', serif;
 }
 @media (max-width:1200px) {
-    #asap-hero h1 {
+    #jar-hero h1 {
         font-size: 15rem;
     }
 }
 @media (max-width:750px) {
-    #asap-hero h1 {
+    #jar-hero h1 {
         font-size: 9rem;
         bottom: auto;
         top: 40px;
     }
 }
-#asap-hero h3 {
+#jar-hero h3 {
     width: 100%;
     font-size: 3rem;
     color: #434343;
@@ -212,19 +231,17 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     left: 50%;
     transform: translateX(-50%);
 }
-
-/***** nav *****/
-
-.asap-hero .asap-container .hero-nav {
-    display: inline-flex;
-    justify-content: space-between;
-    max-width: 100%;
+.jar-hero #hero-nav {
+    display: flex;
+    justify-content: space-around;
+    max-width: 75%;
     width: 100%;
-    align-self: flex-end;
-    align-content: flex-end;
-    align-items: flex-end;
-    position: relative;
+    align-self: center;
+    position: relative; 
+    align-content: center; 
+    margin-bottom: 30px; 
 }
+
 .btn {
     font-family: 'Amatica SC', cursive;
 }
@@ -234,11 +251,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     font-size: 30px;
     margin-bottom: -250px;
 }
-.asap-hero .asap-container {
-    order: 1;
-}
+
+
 @media (max-width:750px) {
-    #asap-hero h3 {
+    #jar-hero h3 {
         top: 150px;
         left: auto;
         transform: none;
@@ -246,54 +262,69 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
         text-align: right;
     }
 }
-#album-cta {
+/* Styling for the how it works div background containing "3-steps" content  */
+.how-it-works {
     background: #fff;
     color: #353535;
-    padding: 160px 0;
+    margin: 0;
+    padding: 0 0 0 15px;
+    width: 100%; 
+}
+#hiw{ 
+    background: #fff; 
+}
+
+
+#step1 h2{ 
+    background: #fff; 
+    margin: 0; 
+    padding-left: 15px; 
 }
 @media all and (max-width:1024px) {
-    #album-cta {
+    #step1 + #step2 + #step3 {
         padding: 60px 0;
     }
 }
-#album-cta .album-grid {
-    display: table;
-    width: 75%;
+#hiw .how-it-works-container .how-it-works .flex-contain {
+    display: flex;
+    width: auto; 
     height: auto;
-}
-@media all and (max-width:1024px) {
-    #album-cta .album-grid {
-        display: block;
-    }
-}
-#album-cta .album-grid__image, #album-cta .album-grid__copy {
-    display: table-cell;
-    width: 50%;
-}
-@media all and (max-width:1024px) {
-    #album-cta .album-grid__image, #album-cta .album-grid__copy {
-        display: block;
-        width: 100%;
-    }
-}
-@media all and (max-width:1024px) {
-    #album-cta .album-grid__image {
-        text-align: center;
-    }
-}
-#album-cta .album-grid__image img {
-    width: auto;
     max-width: 100%;
-    height: auto;
+    background: #fff; 
 }
-#album-cta .album-grid__copy {
+@media all and (max-width:1024px) {
+    #step1 + #step2 + #step3 .flex-contain {
+        /* display: block; */
+    }
+}
+#step1 + #step2 + #step3 .img-content and #step1 + #step2 + #step3 .txt-content {
+    max-width: 100%;
+}
+@media all and (max-width:1024px) {
+    #step1 + #step2 + #step3 .img-content and #step1 + #step2 + #step3 .txt-content {
+        display: block;
+        /* width: 100%; */
+    }
+}
+@media all and (max-width:1024px) {
+    #step1 + #step2 + #step3 .img-content {
+        text-align: center;
+
+    }
+}
+#step1 + #step2 + #step3 .img-content img {
+   
+    width: 100%; 
+}
+
+#step1 + #step2 + #step3 .txt-content {
     padding-left: 10%;
     vertical-align: middle;
 }
 
 /* conditional styling for mobile/ smaller scrreen responsive */
 @media all and (max-width:1024px) {
-    #album-cta .album-grid__copy {
+    #step1 + #step2 + #step3 .txt-content {
         padding-left: 0;
         padding-top: 40px;
         max-width: 540px;
@@ -303,25 +334,53 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 /* Text styling for body content */
-.album-grid__copy h3 {
+.txt-content h3 {
     font-family: 'Amatica SC', cursive;
     font-size: 35px;
 }
-.album-grid__copy p {
+.txt-content p {
     font-family: 'Josefin Slab', serif;
 }
-#album-cta .album-grid__copy h4 {
+#step1 + #step2 + #step3 .txt-content h4 {
     margin-bottom: 5px;
 }
-#album-cta .album-grid__copy h2 {
+#step1 + #step2 + #step3 .txt-content h2 {
     margin-bottom: 30px;
 }
-
-
-#album-cta .album-grid__link:hover {
+#step1 + #step2 + #step3 .flex-contain__link {
+    font-family: 'Oswald','Times',serif;
+    font-weight: 900;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: #FFF;
+    text-transform: uppercase;
+}
+#step1 + #step2 + #step3 .flex-contain__link:hover {
     text-decoration: none;
     color: #FFF;
 }
+
+/* Google Map Location API Styling  */
+
+
+#diw #google-maps-container .how-it-works .flex-contain #map {
+    height: 700px;
+    max-width: 500px; 
+    position: absolute; 
+    z-index:1; 
+    
+  }
+
+#diw #google-maps-container .how-it-works{ 
+    height: 700px;
+    max-width: 500px; 
+    position: absolute; 
+    background: #cc5; 
+  }
+
+#diw #google-maps-container .how-it-works .flex-contain #floating-panel { 
+    position: absolute; top: 10px; left: 25%; z-index: 3; background-color: #fff; padding: 5px; border: 1px solid #999; text-align: center; font-family: 'Roboto','sans-serif'; line-height: 30px; padding-left: 10px; }
+
 
 /*---------- Header Navigation Styling------ */
 .main-nav {
@@ -371,14 +430,19 @@ header {
     margin: 0;
 }
 
+
+
+
 /* fixed div named 'Footer' Styling */
-.footer {
+#footer {
     height: auto;
     display: inline-block;
     position: absolute; 
     display: flex; 
     justify-content: flex-end; 
     align-items: flex-end; 
+    width: 100%; 
+    max-width: 100%; 
 }
 #foot-form{ 
     display: flex; 
@@ -498,4 +562,3 @@ footer {
 .nothing, .form-content {
     flex: 1;
 }
- 
