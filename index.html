@@ -17,11 +17,7 @@
 	  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:700" rel="stylesheet">
 	
 	  <!-- Jquery Scripts -->
-	  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	  <link rel="stylesheet" href="/resources/demos/style.css">
-	  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	  
+	
 		
 		<!-- Custom Styles -->
 	  <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -56,12 +52,27 @@
   <nav class="navbar navbar navbar-fixed-top">
 	<div class="main-nav">
 		<div class="logo"> 
-			<a href="#"> <img src="/assets/images/THEJARvector.PNG"></a>
+			<a href="#"> <img src="/assets/images/BOLSAVector.PNG"></a>
 		</div> 
 		<ul>	
 		<!-- This is the tag to input for the Jar logo image  -->
-			<li><a href="#" class ="nav-btn" id="navigation">About Us</a></li>
-			<li><a href="#" class ="nav-btn" id="navigation">Mission</a></li>  
+			<div id="about" style="border:3px solid black; background-color:#fff; padding:25px; font-size:150%; text-align:center; display:none;">
+				Bolsa partners with local bodegas in urban areas to provide as a middleman bringing local produce and artisanal goods from family-owned shops & urban farms. 
+				 <br><br>
+				<input type="button" value="X" onClick="Popup.hide('about')">
+			</div>
+
+			<div id="modal" style="border:3px solid black; background-color:#fff; padding:25px; font-size:150%; text-align:center; display:none;">
+					Were a group of New Yorkers looking to tackle the issue of little to no nutritional food access in inner cities<br><br>
+					<input type="button" value="X" onClick="Popup.hide('modal')">
+				</div>
+		
+			<li>
+				<a href="#" class ="nav-btn" id="about" onclick="Popup.showModal('about'); return false;">About Us</a>
+			</li>
+			<li>
+				<a href="#" class ="nav-btn" id="modal" onclick="Popup.showModal('modal');return false;">Mission</a>
+			</li>  
 	  	</ul>
 	</div>
   </nav>
@@ -74,17 +85,24 @@
 			<video poster="" id="bgvid" playsinline autoplay muted loop>
 					<source src= "/assets/videos/FarmVideoEdited.mp4" type="video/mp4">
 			</video>
-		<div id="hero-text" class="hero-text"> 
+	<div id="flex-div" class="hero-contents"> 
+					
+		<div id="hero-img" class="hero-contents"> 
+			<a href="#">
+				 <img src="/assets/images/BOLSAVector.PNG">
+			</a>
+		</div>
 
-			<h1>The Jar</h1>
-			<h2> Community-supported agriculture for those that need it most</h2>
+		<div id="hero-text">  
+			<h2>Affordable local food</h2>
 		</div> 
 
-		<div id="hero-nav" class="hero-nav">
+		<div id="hero-nav" class="hero-contents">
 			<button class="btn btn-warning" id="bt"> How it works </button> 
 			<button class="btn btn-warning" id="bt"> Locations</button> 
 			<button class="btn btn-warning" id="bt"> Subscribe </button> 
 		</div>
+	</div> 
 </div> 
 
  <!--How it works content  -->
@@ -219,6 +237,7 @@
 	    <!-- Library Scripts -->
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		<script src='http://www.javascripttoolbox.com/libsource.php/popup/combined/popup.js' type='text/javascript' />`
 		<!-- Disabled Scripts -
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TimelineLite.min.js"></script>

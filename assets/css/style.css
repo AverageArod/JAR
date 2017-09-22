@@ -160,6 +160,8 @@ input:-webkit-autofill {
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
 }
+
+/* Jat Hero Div styling  */
 #jar-hero {
     min-height: 100vh;
     background-position: center center;
@@ -168,7 +170,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column; 
 }
 
@@ -195,20 +196,35 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     outline-style: solid;
     outline-color: #d6d9a6;
 }
-#hero-text h1 {
+
+#flex-div { 
+    display: flex; 
+    align-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+}
+#flex-div #hero-text { 
     width: 100%;
-    font-family: 'Amatica SC', cursive;
-    font-size: 18rem;
-    text-align: center;
-    letter-spacing: 30px;
+    display: flex; 
+    align-self: center;
+}
+
+#flex-div #hero-text h2{ 
+    font-family: 'Open-Sans';
+    width: 100%;
+    font-size: 3rem;
     color: #434343;
+    position: relative;
+}
+#flex-div #hero-text img {
+    width: 75%;
+    text-align: center;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
 
-#hero-text h2 {
-    font-family: 'Josefin Slab', serif;
+
 }
 @media (max-width:1200px) {
     #jar-hero h1 {
@@ -222,15 +238,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
         top: 40px;
     }
 }
-#jar-hero h3 {
-    width: 100%;
-    font-size: 3rem;
-    color: #434343;
-    position: relative;
-    bottom: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-}
+
 .jar-hero #hero-nav {
     display: flex;
     justify-content: space-around;
@@ -238,19 +246,18 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     width: 100%;
     align-self: center;
     position: relative; 
-    align-content: center; 
+    /* align-content: center;  */
     margin-bottom: 30px; 
 }
 
 .btn {
-    font-family: 'Amatica SC', cursive;
+    font-family: 'Amatica SC'; 
 }
 #bt {
-    background-color: #FF878D;
-    margin: 0px 100px;
+    background-color: #FFF387;
+    margin: 0px 85px;
     font-size: 30px;
-    margin-bottom: -250px;
-}
+    }
 
 
 @media (max-width:750px) {
@@ -535,7 +542,7 @@ float: right;
     font-size: 30px;
 }
 
-#form-desc, h5, h2 {
+#form-desc {
     text-align: left;
 }
 
