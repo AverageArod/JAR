@@ -1,12 +1,12 @@
 {
-  "name": "",
+  "name": "JAR",
   "version": "1.0.0",
   "description": "",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dylan Gluck",
+  "author": "Anthony Rodriguez",
   "devDependencies": {
     "connect": "^3.6.2",
     "grunt": "^0.4.5",

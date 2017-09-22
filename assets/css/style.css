@@ -303,7 +303,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 @media all and (max-width:1024px) {
     #step1 + #step2 + #step3 .img-content and #step1 + #step2 + #step3 .txt-content {
         display: block;
-        /* width: 100%; */
+     
     }
 }
 @media all and (max-width:1024px) {
@@ -318,7 +318,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 #step1 + #step2 + #step3 .txt-content {
-    padding-left: 10%;
     vertical-align: middle;
 }
 
